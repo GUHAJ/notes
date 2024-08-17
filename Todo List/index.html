@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo List</title>
+   <!-- Link css -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Link font -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="sub-container">
+         <!-- Navbar -->
+         <nav class="navbar">
+            <div class="heading">
+               <h1 class="title">Daily Notes<span>😎</span></h1>
+               <div class="days" id="days">16 Aug 2024</div>
+            </div>
+            <button class="sum" id="sum">+</button>
+         </nav>
+
+         <!-- Inputan dari tugas -->
+         <div class="container-list-task hide" id="container-list-task">
+            <span class="danger hide"></span>
+            <div class="content">
+               <input type="text" name="text" id="title-task" placeholder="Heading">
+               <textarea name="deksripsi" id="deksripsi" cols="30" rows="10" placeholder="Deksripsi"></textarea>
+               <button class="send" id="send">Send</button>
+            </div>
+         </div>
+      </div>
+
+      <!-- Menyimpan tugas -->
+      <div class="container-task" id="container-task">
+
+      </div>
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+
+button {
+   cursor: pointer;
+}
+
+.container {
+   max-width: 1100px;
+   margin: auto;
+   width: 100%;
+   padding: 2rem;
+}
+
+.sub-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.navbar {
+   display: flex;
+   width: 100%;
+   height: 60px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sum {
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 2px solid rgb(45, 45, 212);
+   color: rgb(45, 45, 212);
+   font-weight: 500;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+h1 {
+   font-size: 2.5em;
+   color: #130202;
+}
+
+.days {
+   font-weight: 300;
+   font-size: .925rem;
+   margin-top: 5px;
+}
+
+.container-list-task {
+   max-width: 300px;
+   border-radius: 5px;
+   padding: 5px;
+   box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+   margin-top: 20px;
+}
+
+.container-list-task input {
+   border: none;
+   margin-bottom: 5px;
+   height: 40px;
+   width: 100%;
+   padding-left: 5px;
+   font-size: 1.3rem;
+   font-weight: 500;
+   outline: none;
+   position: relative;
+}
+
+.container-list-task input:focus {
+   border-bottom: 1px solid black;
+}
+
+.container-list-task input::placeholder {
+   color: black;
+   font-weight: 500;
+}
+
+.container-list-task textarea {
+   border: none;
+   margin-bottom: 5px;
+   width: 100%;
+   padding-left: 5px;
+   font-size: .825rem;
+   font-weight: 400;
+   outline: none;
+   line-height: 1.7;
+   padding: 5px 7px;
+}
+
+.container-list-task textarea:focus {
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+.send {
+   margin-top: 5px;
+   font-size: 1rem;
+   padding: .5em .9em;
+   color: white;
+   font-weight: 500;
+   background-color: rgb(44, 44, 224);
+   border: none;
+   transition: all .3 ease-in;
+}
+
+.hide {
+   display: none;
+}
+
+.danger {
+   color: rgb(196, 17, 17);
+   font-weight: 500;
+   font-size: .9em;
+   /* text-align: center;
+   width: 100%; */
+}
+
+.container-task {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+}
+
+.container-task div {
+   max-width: 300px;
+   max-height: 300px;
+   border-radius: 5px;
+   padding: 5px 5px 10px;
+   box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+   margin-top: 20px;
+   overflow: auto;
+   line-height: 1.7;
+   font-size: .9rem;
+}
+
+#delete {
+   background-color: rgb(255, 11, 11);
+   color: white;
+   padding: .5em 1em;
+   font-weight: 500;
+   border: none;
+   margin-top: 10px;
+}
